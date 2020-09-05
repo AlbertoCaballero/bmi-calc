@@ -98,8 +98,10 @@ class _InputPageState extends State<InputPage> {
                     ),
                     SliderTheme(
                       data: SliderTheme.of(context).copyWith(
-                        thumbShape: RoundSliderThumbShape(enabledThumbRadius: 10.0),
-                        overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0),
+                        thumbShape:
+                            RoundSliderThumbShape(enabledThumbRadius: 10.0),
+                        overlayShape:
+                            RoundSliderOverlayShape(overlayRadius: 30.0),
                       ),
                       child: Slider(
                         value: height.toDouble(),
@@ -123,21 +125,40 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: CustomContainer(
                     color: Color(kInactiveCardColor.value),
+                    child: GenderInsert(
+                      icon: Icons.widgets,
+                      gender: 'Widgets',
+                    ),
                   ),
                 ),
                 Expanded(
                   child: CustomContainer(
                     color: Color(kInactiveCardColor.value),
+                    child: GenderInsert(
+                      icon: Icons.weekend,
+                      gender: 'Weekend',
+                    ),
                   ),
                 ),
               ],
             )),
-            Container(
-              color: Colors.cyan,
-              margin: EdgeInsets.only(top: 10.0),
-              width: double.infinity,
-              height: 60.0,
-            )
+            GestureDetector(
+              onTap: () {
+                print('Calculated');
+              },
+              child: Container(
+                color: Colors.cyan,
+                margin: EdgeInsets.only(top: 10.0),
+                width: double.infinity,
+                height: 60.0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Calculate BMI'),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
