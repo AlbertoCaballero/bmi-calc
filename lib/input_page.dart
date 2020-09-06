@@ -120,28 +120,29 @@ class _InputPageState extends State<InputPage> {
               ),
             ),
             Expanded(
-                child: Row(
-              children: [
-                Expanded(
-                  child: CustomContainer(
-                    color: Color(kInactiveCardColor.value),
-                    child: GenderInsert(
-                      icon: Icons.widgets,
-                      gender: 'Widgets',
+              child: Row(
+                children: [
+                  Expanded(
+                    child: CustomContainer(
+                      color: Color(kInactiveCardColor.value),
+                      child: GenderInsert(
+                        icon: Icons.widgets,
+                        gender: 'Widgets',
+                      ),
                     ),
                   ),
-                ),
-                Expanded(
-                  child: CustomContainer(
-                    color: Color(kInactiveCardColor.value),
-                    child: GenderInsert(
-                      icon: Icons.weekend,
-                      gender: 'Weekend',
+                  Expanded(
+                    child: CustomContainer(
+                      color: Color(kInactiveCardColor.value),
+                      child: GenderInsert(
+                        icon: Icons.weekend,
+                        gender: 'Weekend',
+                      ),
                     ),
                   ),
-                ),
-              ],
-            )),
+                ],
+              ),
+            ),
             GestureDetector(
               onTap: () {
                 print('Calculated');
