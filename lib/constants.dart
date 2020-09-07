@@ -8,7 +8,22 @@ const kLableTextStyle = TextStyle(
   color: Colors.white,
 );
 
+const kResultTextStyle = TextStyle(
+  fontSize: 18.0,
+  color: Colors.cyan,
+  fontWeight: FontWeight.w900
+);
+
 const kBigLableStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
+);
+
+const kBMIResultStyle = TextStyle(
+  fontSize: 100.0,
+  fontWeight: FontWeight.w900,
+);
+
+const kBodyTextStyle = TextStyle(
+  fontSize: 22.0
 );
