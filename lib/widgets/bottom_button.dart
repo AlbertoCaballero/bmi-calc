@@ -14,8 +14,8 @@ class BottomButton extends StatelessWidget {
       margin: EdgeInsets.only(top: 10.0),
       width: double.infinity,
       height: 60.0,
-      child: InkWell(
-        onTap: this.onTap,
+      child: RawMaterialButton(
+        onPressed: this.onTap,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
