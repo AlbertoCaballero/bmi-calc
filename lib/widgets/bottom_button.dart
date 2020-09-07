@@ -9,13 +9,13 @@ class BottomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: this.onTap,
-      child: Container(
-        color: Colors.cyan,
-        margin: EdgeInsets.only(top: 10.0),
-        width: double.infinity,
-        height: 60.0,
+    return Container(
+      color: Colors.cyan,
+      margin: EdgeInsets.only(top: 10.0),
+      width: double.infinity,
+      height: 60.0,
+      child: InkWell(
+        onTap: this.onTap,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

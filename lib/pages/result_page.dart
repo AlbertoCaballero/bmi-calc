@@ -34,25 +34,24 @@ class ResultPage extends StatelessWidget {
               flex: 5,
               child: CustomContainer(
                 color: kInactiveCardColor,
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Text(
-                        this.text.toUpperCase(),
-                        style: kResultTextStyle,
-                      ),
-                      Text(
-                        this.result,
-                        style: kBMIResultStyle,
-                      ),
-                      Text(
-                        this.interpretation,
-                        textAlign: TextAlign.center,
-                        style: kBodyTextStyle,
-                      ),
-                    ],
-                  ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      this.text.toUpperCase(),
+                      style: kResultTextStyle,
+                    ),
+                    Text(
+                      this.result,
+                      style: kBMIResultStyle,
+                    ),
+                    Text(
+                      this.interpretation,
+                      textAlign: TextAlign.center,
+                      style: kBodyTextStyle,
+                    ),
+                  ],
                 ),
               ),
             ),

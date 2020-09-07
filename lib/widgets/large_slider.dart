@@ -3,15 +3,15 @@ import 'package:bmi_calculator/constants.dart';
 
 class LargeSlider extends StatelessWidget {
   LargeSlider(
-      {@required this.lable,
-      @required this.units,
+      {this.label = '',
+      this.units = '',
+      this.min = 120,
+      this.max = 220,
       @required this.value,
-      @required this.min,
-      @required this.max,
       @required this.onChanged
       });
 
-  final String lable;
+  final String label;
   final String units;
   final int value;
   final int min, max;
@@ -25,7 +25,7 @@ class LargeSlider extends StatelessWidget {
       children: [
         Center(
           child: Text(
-            this.lable,
+            this.label,
             style: kLableTextStyle,
           ),
         ),

@@ -79,7 +79,7 @@ class _InputPageState extends State<InputPage> {
               child: CustomContainer(
                 color: kInactiveCardColor,
                 child: LargeSlider(
-                  lable: 'Height',
+                  label: 'Height',
                   value: height,
                   min: 120,
                   max: 220,
@@ -144,9 +144,9 @@ class _InputPageState extends State<InputPage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => ResultPage(
-                      result: calc.calculateBMI(),
-                      text: calc.getResult(),
-                      interpretation: calc.getInterpretation(),
+                      result: calc.bmi,
+                      text: calc.result,
+                      interpretation: calc.interpretation,
                     ),
                   ),
                 );
