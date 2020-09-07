@@ -4,9 +4,8 @@
 
 This is a modified version of the BMI Calculator intended as a learning resource for The App Brewery's Complete Flutter Development Bootcamp.
 
-![Sample Image](assets/images/bmidev.jpg)
-
-Still in development
+![Sample Image Input](assets/images/bmidev.png)
+![Sample Image Result](assets/images/bmidevr.png)
 
 ## Our Goal
 
